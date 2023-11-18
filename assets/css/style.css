@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
+}
+
+.container {
+    width: 100%; 
+    max-width: 900px;
+    background-color: #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 2px solid #000;
+    display: grid;
+    grid-template-areas: 
+    "title title title title"
+    "form-group form-group form-group button"
+    "task-count task-list task-list task-list";
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    padding-top: 5px;
+}
+h1 {
+    grid-area: title;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.form-group{
+    grid-area: form-group;
+}
+
+.button{
+    grid-area: button;
+}
+
+.count{
+    grid-area: task-count;
+}
+
+.list{
+    grid-area: task-list;
+}
+
+#task-form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+}
+
+#task-input {
+    grid-area: form-group;
+    flex: 1;
+    margin-right: 10px;
+    width: 750px;
+}
+
+#task-form button {
+    grid-area: button;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#task-count {
+    grid-area: task-count;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+#task-count > div {
+    margin-bottom: 5px;
+}
+
+#task-list {
+    grid-area: task-list;
+    width: 400px;
+    display: flex;
+    flex-direction: column; /* Organizar en columna */
+    align-items: flex-end; /* Alinear hacia la derecha */
+}
+
+
+.list .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; /* Alinear en la línea base */
+    padding: 5px;
+    gap: 10px;
+    width: 100%; /* Ancho completo */
+}
+
+.subtittle1{
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtittle2 {
+    font-weight: bold;
+    margin: 0;
+    padding-right: 560px;
+}
+
+.task p:nth-child(3) {
+    margin: 0;
+}
+
+.task input {
+    margin: 0;
+}
+
+.task span {
+    flex-grow: 1;
+}
+
+.task button {
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
